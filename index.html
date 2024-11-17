@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Negar's</title>
+        <script>
+        // Function to send data back to the bot
+        function sendDataToBot() {
+            const data = { action: "submit", value: document.getElementById("inputField").value };
+            Telegram.WebApp.sendData(JSON.stringify(data));
+        }
+    </script>
+</head>
+<body>
+<h1>Hello!</h1>
+<h3>This page is only for testing purposes</h3>
+<button style="color:red">I don't do anything</button>
+</body>
+</html>
